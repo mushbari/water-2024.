@@ -61,7 +61,7 @@ def main():
     else:
         # Create a button to execute the prediction
         if st.button('Predict Potability'):
-            if model is not None:
+            if model is RandomForestClassifier:
                 prediction = model.predict(input_df)
                 if prediction[0] == 0:
                     st.write('The water is not potable.')
