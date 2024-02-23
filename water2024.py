@@ -4,6 +4,7 @@ import pickle
 import os
 
 # Load the data
+model_path ="C:/Users/mmnm2/Desktop/PROJECT 45 END/RandomForestClassifier_model1.sav"
 data_path = r"C:\Users\mmnm2\Desktop\PROJECT 45 END\water.csv"
 df = pd.read_csv(data_path)
 
