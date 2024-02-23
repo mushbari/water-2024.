@@ -55,10 +55,6 @@ def main():
     }
     input_df = pd.DataFrame(data)
 
-    # Check if the inputs are valid before predicting
-    if input_df.isnull().values.any():
-        st.write('Please fill in all the fields.')
-    else:
         # Create a button to execute the prediction
         if st.button('Predict Potability'):
             if model is RandomForestClassifier:
