@@ -42,18 +42,7 @@ def main():
     Trihalomethanes = st.text_input("Trihalomethanes")
     Turbidity = st.text_input("Turbidity")
 
-    data = {
-        'ph': [float(ph) if ph else None],
-        'Hardness': [float(Hardness) if Hardness else None],
-        'Solids': [float(Solids) if Solids else None],
-        'Chloramines': [float(Chloramines) if Chloramines else None],
-        'Sulfate': [float(Sulfate) if Sulfate else None],
-        'Conductivity': [float(Conductivity) if Conductivity else None],
-        'Organic_carbon': [float(Organic_carbon) if Organic_carbon else None],
-        'Trihalomethanes': [float(Trihalomethanes) if Trihalomethanes else None],
-        'Turbidity': [float(Turbidity) if Turbidity else None]
-    }
-    input_df = pd.DataFrame(data)
+
 
     # Check if the inputs are valid before predicting
     if input_df.isnull().values.any():
